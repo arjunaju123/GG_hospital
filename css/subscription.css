@@ -1,0 +1,97 @@
+.subscription-box {
+    width: 1170px;
+    margin: -25px auto;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .label {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 10px;
+    flex: 1;
+    padding-left: 90px;
+  }
+
+  .label h1{
+    margin-top: 115px;
+  }
+  
+  .input-container {
+    flex: 1;
+  }
+
+  .bt{
+    margin-left: 0px;
+  }
+
+  .inp{
+    margin-left: 140px;
+  }
+  
+  .inp,
+.bt {
+  border: none;
+  padding: 10px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.input-container::after {
+  content: "";
+  display: block;
+  width: 59%; /* Adjust the width of the underline */
+  border-bottom: 1px solid black; /* Adjust the thickness and color of the underline */
+  margin-top: 2px; /* Adjust the spacing between the input/button and the underline */
+  margin-left: 150px;
+}
+
+.bt {
+  background-color: #17c1a3;
+  width: 130px;
+  color: white;
+
+}
+
+.bt:hover {
+  background-color: lightgray;
+}
+
+hr {
+    width: 100px;
+    transform: scaleX(2); /* Adjust the scaling factor as needed */
+    margin: 20px auto; /* Optional: Adjust the margin to control spacing around the hr */
+    border: none;
+    border-bottom: 1px solid black; /* Optional: Add a bottom border for the hr */
+  }
+
+  .rotated-image {
+    background-image: url('/img/back.png');
+    z-index: 1;
+    position: absolute;
+    top: 3400px; /* Adjust the distance from the top */
+ /* Adjust the distance from the right */
+    transform: rotate(7deg); /* Adjust the rotation angle */
+    height: 180px;
+  }
+
+  .blue-rect{
+    margin-top: -350px;
+    height: 400px;
+    width: 100%;
+  }
+
+  .blue-rect {
+    background-image: url('/img/blue-background.jpg'); /* Replace with the path to your blue background image */
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    padding: 50px 0; /* Adjust padding as needed */
+  }
+
+
+  
+  

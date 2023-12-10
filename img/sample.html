@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Image Scroll</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .image-container {
+            white-space: nowrap;
+            animation: scrollImages 20s linear infinite;
+        }
+
+        .image-container img {
+            width: 100vw;
+            height: auto;
+            display: inline-block;
+            vertical-align: top;
+        }
+
+        @keyframes scrollImages {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="image-container">
+        <img src="doctor.jpg" alt="Image 1">
+        <img src="doctor.jpg" alt="Image 2">
+        <img src="doctor.jpg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+</body>
+</html>

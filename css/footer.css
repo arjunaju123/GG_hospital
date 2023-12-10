@@ -1,0 +1,88 @@
+/* Reset some default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: #f0f0f0; /* Adjust the background color */
+    padding: 20px;
+  }
+  
+  .footer-part {
+    display: flex;
+    flex-direction: column;
+    width: 80%; /* Adjust the width as needed */
+  }
+  
+  /* First Half Styles */
+  .first-half {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .first-half .part1 img {
+    max-width: 100%; /* Ensure the image doesn't overflow its container */
+  }
+  
+  .first-half .part2,
+  .first-half .part3 {
+    text-align: center;
+  }
+  
+  /* Second Half Styles */
+  .second-half {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .second-half .part1,
+  .second-half .part2,
+  .second-half .part3 {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .second-half .row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  /* Third Half Styles */
+  .third-half {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+  }
+  
+  .third-half .part1,
+  .third-half .part2,
+  .third-half .part3,
+  .third-half .part4 {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .third-half .row {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .social-icons i {
+    font-size: 20px;
+    margin: 5px;
+  }
+
+  .foot-hr{
+    width: 620px;
+  }
+  

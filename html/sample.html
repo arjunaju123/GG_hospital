@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointment Booking Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .form-container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .form-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .form-row label {
+            width: 30%;
+            text-align: right;
+            margin-right: 15px;
+        }
+
+        .form-row input,
+        .form-row select {
+            width: 60%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+
+        .form-actions {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .form-actions button {
+            padding: 10px;
+            background-color: #4caf50;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <div class="form-row">
+            <label for="fullName">Full Name:</label>
+            <input type="text" id="fullName" name="fullName" required>
+        </div>
+
+        <div class="form-row">
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+        </div>
+
+        <div class="form-row">
+            <label for="selectDate">Select Date:</label>
+            <input type="date" id="selectDate" name="selectDate" required>
+        </div>
+
+        <div class="form-row">
+            <label for="department">Department:</label>
+            <input type="text" id="department" name="department" required>
+        </div>
+
+        <div class="form-row">
+            <label for="selectDoctor">Select Doctor:</label>
+            <select id="selectDoctor" name="selectDoctor" required>
+                <option value="doctor1">Doctor 1</option>
+                <option value="doctor2">Doctor 2</option>
+                <!-- Add more doctor options as needed -->
+            </select>
+        </div>
+
+        <div class="form-actions">
+            <button type="submit">Book Appointment</button>
+        </div>
+    </div>
+
+</body>
+</html>

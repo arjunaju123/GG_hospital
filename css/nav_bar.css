@@ -1,0 +1,44 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif; 
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    padding: 10px; 
+}
+
+.left-column {
+    flex: 0.5;
+    padding: 10px; 
+}
+
+.topnav {
+    flex: 2;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    margin-left: 50px;
+}
+
+.topnav a {
+    text-decoration: none; 
+    padding: 10px;
+    margin-right: 10px; 
+    transition: color 0.3s; 
+    font-weight: bold;
+}
+
+.topnav a:hover {
+    color: red;
+}
+
+.active {
+    color: red;
+}
+
+.nonactive{
+    color:black;
+}
+
